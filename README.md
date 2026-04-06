@@ -2,6 +2,8 @@
 
 A clean, interactive personal finance dashboard built with **React + Vite**.
 
+**Live Demo:** https://Anjalisahu09.github.io/FinTrack
+
 ## Features
 
 ### Core Requirements ✅
@@ -33,20 +35,17 @@ A clean, interactive personal finance dashboard built with **React + Vite**.
 ### Steps
 
 ```bash
-# 1. Install dependencies
+# 1.clone the repository
+git clone https://github.com/Anjalisahu09/FinTrack.git
+
+# 2. Install dependencies
 npm install
 
-# 2. Start development server
+# 3. Start development server
 npm run dev
 
-# 3. Open in browser
+# 4. Open in browser
 # → http://localhost:5173
-```
-
-### Build for production
-```bash
-npm run build
-npm run preview
 ```
 
 ## Project Structure
@@ -70,18 +69,13 @@ src/
 
 ## Role Behavior
 
-| Feature | Viewer | Admin |
-|---------|--------|-------|
-| View dashboard | ✅ | ✅ |
-| View transactions | ✅ | ✅ |
-| Add transaction | ❌ | ✅ |
-| Edit transaction | ❌ | ✅ |
-| Delete transaction | ❌ | ✅ |
-| Export CSV | ✅ | ✅ |
-
+1. Viewer: can view dashboard, export csv file
+2. ⁠Analyst: can view dashboard, insight, and export csv file
+3. ⁠Admin: can manage transactions, view dashboard and export csv file
+   
 Switch roles using the dropdown at the bottom of the sidebar.
 
 ## Design Decisions
-- **Font**: Syne (display) + DM Sans (body) — distinctive and readable
+- **Font**: DM Sans — distinctive and readable
 - **Color**: Dark sidebar with lime-green accent (#c8f135) for a fintech feel
 - **No external CSS framework** — custom design system via CSS variables for full control
